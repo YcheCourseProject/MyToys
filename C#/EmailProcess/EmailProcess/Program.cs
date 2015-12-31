@@ -27,15 +27,16 @@ namespace EmailProcess
 
         static void Main(string[] args)
         {
+            Console.WriteLine("File Path/Name is " + args[0]);
             String ConStr = @"Provider=Microsoft.ACE.OLEDB.12.0;" +
-            @"Data source= E:\" +
-            @"email_info.accdb";
+            @"Data source= " + args[0];
             int rowsAffectedNum = 0;
+
             OleDbConnection oleCon = new OleDbConnection(ConStr);
             OleDbDataAdapter oleDap = new OleDbDataAdapter("select * from [匹配公司名和邮箱地址]", oleCon);
             DataSet ds = new DataSet();
             oleDap.Fill(ds);
-            Console.WriteLine(ds.Tables[0].Columns.Count);
+
             oleCon.Open();
             foreach (DataRow row in ds.Tables[0].Rows)
             {
@@ -59,12 +60,13 @@ namespace EmailProcess
                         oleCommand.Connection = oleCon;
                         rowsAffectedNum += oleCommand.ExecuteNonQuery();
                         if (rowsAffectedNum % 1000 == 0)
-                            Console.WriteLine(rowsAffectedNum);
+                            Console.WriteLine(rowsAffectedNum + "Has been elected");
                     }
 
                 }
             }
 
+            Console.WriteLine("All " + rowsAffectedNum + " Records Related, Press Any Key Exit :)");
             oleCon.Close();
             oleCon.Dispose();
             Console.Read();
