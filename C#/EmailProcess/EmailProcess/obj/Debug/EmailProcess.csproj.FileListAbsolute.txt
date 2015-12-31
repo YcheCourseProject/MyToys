@@ -1,6 +1,0 @@
-c:\users\yche\documents\visual studio 2013\Projects\EmailProcess\EmailProcess\bin\Debug\EmailProcess.exe.config
-C:\Users\yche\documents\visual studio 2013\Projects\EmailProcess\EmailProcess\bin\Debug\EmailProcess.exe
-C:\Users\yche\documents\visual studio 2013\Projects\EmailProcess\EmailProcess\bin\Debug\EmailProcess.pdb
-C:\Users\yche\documents\visual studio 2013\Projects\EmailProcess\EmailProcess\obj\Debug\EmailProcess.csprojResolveAssemblyReference.cache
-C:\Users\yche\documents\visual studio 2013\Projects\EmailProcess\EmailProcess\obj\Debug\EmailProcess.exe
-C:\Users\yche\documents\visual studio 2013\Projects\EmailProcess\EmailProcess\obj\Debug\EmailProcess.pdb
