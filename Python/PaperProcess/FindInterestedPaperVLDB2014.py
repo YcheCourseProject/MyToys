@@ -25,26 +25,26 @@ def loadData(url):
 
 if __name__ == '__main__':
     reload(sys)
-    i =0;
+    i = 0;
     sys.setdefaultencoding('utf-8')
     path = r'/home/cheyulin/Documents/Paper/GraphInDB/vldb2013/'
     page = loadData('http://www.vldb.org/pvldb/vol6.html')
-    #path = r'/home/cheyulin/Documents/Paper/GraphInDB/vldb2014/'
-    #page = loadData('http://www.vldb.org/pvldb/vol7.html')
+    # path = r'/home/cheyulin/Documents/Paper/GraphInDB/vldb2014/'
+    # page = loadData('http://www.vldb.org/pvldb/vol7.html')
     # path = r'/home/cheyulin/Documents/Paper/GraphInDB/vldb2016/'
     # page = loadData('http://www.vldb.org/pvldb/vol9.html')
     soup = BeautifulSoup(page, from_encoding='utf-8')
     paper_info = soup.find_all('a');
     for paper in paper_info:
-            if re.match(r'.*http.*pdf.*', str(paper)):
-                paper_file_name = str(paper.string).strip().replace(' ','_') + '.pdf'
-                if re.match('.*[Gg]raph.*',paper_file_name):
-                    i+=1
-                    paper_url = paper['href']
-                    print "hi:"+str(paper).split('</a>')[0].split(' ')[2].strip()
-                    print paper_file_name
-                    print str(paper_url).strip()
-                    f = urllib2.urlopen(paper_url)
-                    with open(path + paper_file_name, 'wb') as output_stream:
-                        output_stream.write(f.read())
+        if re.match(r'.*http.*pdf.*', str(paper)):
+            paper_file_name = str(paper.string).strip().replace(' ', '_') + '.pdf'
+            if re.match('.*[Gg]raph.*', paper_file_name):
+                i += 1
+                paper_url = paper['href']
+                print "hi:" + str(paper).split('</a>')[0].split(' ')[2].strip()
+                print paper_file_name
+                print str(paper_url).strip()
+                f = urllib2.urlopen(paper_url)
+                with open(path + paper_file_name, 'wb') as output_stream:
+                    output_stream.write(f.read())
     print i

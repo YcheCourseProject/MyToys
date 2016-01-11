@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 
 __author__ = 'cheyulin'
 
+
 def loadData(url):
     request = urllib2.Request(url)
     request.add_header('Accept-encoding', 'gzip')
@@ -37,6 +38,6 @@ if __name__ == '__main__':
                 paper_url = re.search(r'http.*[^"]pdf', str(pdf_img)).group(0)
                 print paper_url
                 f = urllib2.urlopen(paper_url)
-                with open(path+paper_file_name,'wb') as output_stream:
+                with open(path + paper_file_name, 'wb') as output_stream:
                     output_stream.write(f.read())
-                # print soup.prettify().encode('GB18030')
+                    # print soup.prettify().encode('GB18030')
