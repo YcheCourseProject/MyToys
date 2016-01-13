@@ -36,7 +36,7 @@ def loadData(url):
 
 def open_until_success(url):
     try:
-        f = urllib2.urlopen(download_link)
+        f = urllib2.urlopen(url)
         return f
     except urllib2.HTTPError:
         open_until_success()
