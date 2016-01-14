@@ -1,6 +1,6 @@
 #VLDB Graph Summary
 ##2013
-- Toward a Distance Oracle for Billion-Node Graphs(MSRA,Tsinghua)
+- Toward a Distance Oracle for Billion-Node Graphs(MSRA,Tsinghua)  
 Trinity(in-memory, distributed as engine), sketch-based distance oracle(approximate answers), propose landmark selection distributed BFS and answer generation.
 
 - From Think Like a Vertex to Think Like a Graph(IBM Research, GraphSQL)
