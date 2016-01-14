@@ -61,6 +61,18 @@ Experiment on GPS, implement those with PRAM model, which could not be represent
 - **A Principled Approach to Bridging the Gap between Graph Data and their Schemas(IBM Research)**  
 1) Define language for inputing rules for structuredness, 2) partition rdf graph into subsets with respect to specific structureddness functions chosen by users, test on DBpedia Persons and WordNet Nouns
 
+- **Finding the Cost-Optimal Path with Time Constraint over Time-Dependent Graphs(CUHK Uof Tianjing)**  
+Three types of problems:1) query of sssp on static graphs(many research on index)("Shortest-path queries in static networks"), 2) TDSP(Time-Dependent Shortest Path)i.e. minimun time, 3) Cost-Optimal Path with Time Constraints over Time-Dependent Graphs, Test on CARN(23,718 vertices) and EURN(3,598,623 vertices)
+
+- **Path Problems in Temporal Graphs(CUHK)**  
+On temporal graphs, define earliest-arrival, latest-departure, fastest, shortest paths, Test on arxiv, dblp, elec, enron, epin, fb, flickr, digg, slash, conflict, growth, youtube, refer to "Tf-label:a topological-folding labeling scheme for reachability querying in a large graph", "Efficient processing of distance queries in large graphs: a vertex cover approach", "K-reach:Who is in your small world", "Is-label:an independent-set based labeling scheme for point-to-point distance query"
+
+- **Computing Personalized PageRank Quickly by Exploiting Graph Structures(Uof Tokyo)**  
+Iterative-based algorithm, faster than Power system, provide efficient algorithm for tree decomposition, revisit core and expander graph, compare direct method wtih small tree-width graph to construct and LU decomposition
+
+- **An Experimental Comparision of Pregel-like Graph Processing Systems(Waterloo Ozsu)**  
+Test on PR,SSSP,CC,MST, setup time:load and partition the input graph, computation time:local vertex computation, barrier sync and communication, Result: 1) Giraph/GraphLab sync mode have good all-around performance, GPS excels at memory efficiency, Mizan worst 2) Giraph has map better than byte array in graph mutation and need to focus on load balance, GPS LALP and dynamic migration useless and need to explore data locality, Mizan need to improve message processing optimizations, Graphlab need to reduce communication overheads
+
 
 
 
