@@ -73,6 +73,33 @@ Iterative-based algorithm, faster than Power system, provide efficient algorithm
 - **An Experimental Comparision of Pregel-like Graph Processing Systems(Waterloo Ozsu)**  
 Test on PR,SSSP,CC,MST, setup time:load and partition the input graph, computation time:local vertex computation, barrier sync and communication, Result: 1) Giraph/GraphLab sync mode have good all-around performance, GPS excels at memory efficiency, Mizan worst 2) Giraph has map better than byte array in graph mutation and need to focus on load balance, GPS LALP and dynamic migration useless and need to explore data locality, Mizan need to improve message processing optimizations, Graphlab need to reduce communication overheads
 
+- **Distributed Graph Simulation: Impossibility and Possibility(Fan Wenfei)**  
+Define two metrics, i.e., response time and data shipment(impossibility), partition boundness(possibility) on which adopt incremental local evaluation an dtuning message pass, Study isomorhism, graph simulation and strong graph simulation, possile directions:graph compression, view-based query processing, top-k query answering
+
+- **Demo(Real-time Twitter Recommendation:Online Motif Detection in Large Dynamic Graph)(Twitter Inc)**  
+Envision system with dsl to specify a motif, engine helps optimize query plan, can augment partitioned graph infrastructures to implement other recommendation systems
+
+- **Industry Paper(Large-Scale Graph Analytics in Aster 6:Bringing Context to Big Data Discovery)(Teradata Aster)**  
+Multi-engine processing, built-in network structure analysis, graphical model inference, collaborative filtering
+
+- **Demo(Graph-based Data Integratin and Business Intelligence with BIIG)(Uof Leipzig)**  
+Sample business transaction grap, data integration and aggregation
+
+- **Demo(Vertexica:Your Relational Friend for Graph Analytics!)(Uof Maryland)**  
+Ontopof Rdbms, leverage Rdbms and enable graph analytics, gui
+
+- **Demo(NScale:Neighborhood-centric Analytics on Large Graphs)(Uof Maryland)**  
+Build ontopof yarn, features GEL(a novel graph extraction and loading phase, extract relevent data using as few machines as possible, enable complex neighborhood-centric analysis, enable users to write programs at neighborhood or subgraph level)
+
+- **Notes(Systems for Big-Graphs)(Arijit Khan,ETH sameh Elnikety MSRA)**  
+Highlight the need to seperate off-line(PR, BP) and on-line graph algorithms(reachability, fidn shortest path, sub-graph  match), mention dynamic graph partition
+
+- **Auto-Approximation of Graph Computing(CUHK Jeffery Xu Yu)**  
+Refer to "A survey and taxonomy of graph sampling" but point out not useful, (BlinkDB, MapReduce Online EARL approximation by sampling), make use of abstract syntax tree(AST) in Clang(Message sampler), Limitations: 1)Enumerative task,e.g, find the neighbors of a specific vertex, 2)Trivial task,e.g, report the degree of a vertex, 3)Localized task, e.g, find the number of triangles that include a specific vertex, Also 1)not understand relationship between error and graph size 2) graph synthesis technique can be improved
+
+
+
+
 
 
 
