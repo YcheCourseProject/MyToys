@@ -1,3 +1,5 @@
+import random
+
 minimal_num = -1
 
 
@@ -61,3 +63,7 @@ def rand_sort(number_list):
 
 
 print rand_sort([3, 1, 4, 6, 2, 5, 7])
+my_lst = [i for i in range(15)]
+random.shuffle(my_lst)
+print my_lst
+print rand_sort(my_lst)
