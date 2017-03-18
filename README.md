@@ -13,7 +13,7 @@ content | language used
 [Kdd Course Homework Small Codes](Languages/Java/KddCourseHomework) | java
 [Paper Crawlering](Languages/Python/PaperProcess) | python
 
-## Configurations
+## Configurations 
 
 - [Dev Environment](Dev-Env-Config)
 
