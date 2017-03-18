@@ -1,17 +1,26 @@
-#My Toys
-###Description
+# My Toys
+
+## Description
+
 This repository will record some small tools, I developed for work, study,
 consisting of C#, Java, Python, Shell Codes or Scripts.
 
-###Category
+## Language Usage Demo
 
 content | language used
 --- | ---
-[Dev Environment](Dev-Env-Config) | markdown
-[Email Process With MS Light-Weight Access DB](Csharp/EmailProcess) | csharp
-[Kdd Course Homework Small Codes](Java/KddCourseHomework) | java
-[Paper Crawlering](Python/PaperProcess) | python
-[Shell Usage](Shell) | shell
+[Email Process With MS Light-Weight Access DB](Languages/Csharp/EmailProcess) | csharp
+[Kdd Course Homework Small Codes](Languages/Java/KddCourseHomework) | java
+[Paper Crawlering](Languages/Python/PaperProcess) | python
 
-###Study Scripts
-- [Study](Study)
+## Configurations
+
+- [Dev Environment](Dev-Env-Config)
+
+## Tools
+
+- [Shell Utils](Toos/Shell) | shell
+
+## Study Scripts
+
+- [Study](StudySnippets)
