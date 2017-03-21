@@ -1,4 +1,5 @@
-###Userful ShortCuts
+### Useful ShortCuts
+
 - Ctrl-A 相当于HOME键，用于将光标定位到本行最前面
 
 - Ctrl-E 相当于End键，即将光标移动到本行末尾
